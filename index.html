@@ -2,100 +2,71 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Protocol Simulation Games</title>
+  <title>Protocol Simulation Gaming</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>
-    body {
-      background-color: #000;
-      color: #fff;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 2rem;
-      line-height: 1.7;
-    }
-
-    h1, h2, h3 {
-      color: #ffffff;
-    }
-
-    a {
-      color: #4ea9ff;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    header {
-      text-align: center;
-      margin-bottom: 3rem;
-    }
-
-    section {
-      margin-bottom: 2.5rem;
-    }
-
-    footer {
-      text-align: center;
-      color: #888;
-      margin-top: 4rem;
-      font-size: 0.9rem;
-    }
-
-    ul {
-      padding-left: 1.2rem;
-    }
-
-    .link-box {
-      background-color: #111;
-      padding: 1rem;
-      border: 1px solid #333;
-      border-radius: 5px;
-      margin-top: 1rem;
-      display: inline-block;
-    }
-  </style>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-black text-white font-sans">
 
-  <header>
-    <h1>Protocol Simulation</h1>
-    <p>Mobile Simulation Games Studio</p>
+  <!-- Hero Section -->
+  <header class="flex flex-col items-center mt-10 lg:mt-20 px-4">
+    <h1 class="text-4xl sm:text-6xl lg:text-7xl text-center tracking-wide">
+      Welcome to 
+      <span class="bg-gradient-to-r from-orange-500 to-red-800 text-transparent bg-clip-text">
+        Protocol Simulation Gaming
+      </span>
+    </h1>
+    <p class="mt-6 text-lg text-center text-neutral-400 max-w-3xl">
+      Mobile Simulation Games Studio focusing on realism, performance, and accessibility for every device.
+    </p>
+
+    <!-- Buttons -->
+    <div class="flex justify-center mt-8 space-x-4">
+      <a href="https://play.google.com/store/apps/dev?id=5128778655876625840" target="_blank" 
+         class="bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-6 rounded-md hover:from-orange-600 hover:to-orange-900 transition">
+        Official Studio Page
+      </a>
+      <a href="ProtocolGamesWebsite/privacy-policy.html" 
+         class="py-3 px-6 rounded-md border border-gray-600 hover:bg-gray-800 transition">
+        Privacy Policy
+      </a>
+    </div>
   </header>
 
-  <section>
-    <h2>📱 Our Games</h2>
-    <p>We specialize in realistic simulation and driving games available on the Google Play Store under the name <strong>Protocol Simulation</strong>.</p>
-    <p>Examples include:</p>
-    <ul>
-      <li>Car Game Simulator</li>
-      <li>Highway Traffic Racing</li>
-      <li>Police Patrol & Driving Simulator</li>
+  <!-- Games Section -->
+  <section class="mt-20 px-6 max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-semibold mb-6">📱 Our Games</h2>
+    <p class="text-neutral-400 mb-6">
+      We specialize in realistic simulation and driving games available on the Google Play Store under the name 
+      <strong>Protocol Simulation</strong>.
+    </p>
+    <ul class="text-lg space-y-2">
+      <li>🚗 Car Game Simulator</li>
+      <li>🏎️ Highway Traffic Racing</li>
+      <li>🚔 Police Patrol & Driving Simulator</li>
     </ul>
   </section>
 
-  <section>
-    <h2>🔗 Important Links</h2>
-    <div class="link-box">
-      <p><a href="ProtocolGamesWebsite/privacy-policy.html">Privacy Policy</a></p>
-    </div>
+  <!-- Updates Section -->
+  <section class="mt-20 px-6 max-w-3xl mx-auto text-center">
+    <h2 class="text-3xl font-semibold mb-6">📢 Updates & Blog (Coming Soon)</h2>
+    <p class="text-neutral-400">
+      We will soon publish development logs, gameplay insights, and update announcements here.
+    </p>
   </section>
 
-  <section>
-    <h2>📢 Updates & Blog (Coming Soon)</h2>
-    <p>We will soon publish development logs, gameplay insights, and update announcements here.</p>
-  </section>
-
-  <section>
-    <h2>📬 Contact</h2>
-    <p>If you have any questions or suggestions, please reach out to us:</p>
-    <ul>
+  <!-- Contact Section -->
+  <section class="mt-20 px-6 max-w-3xl mx-auto text-center">
+    <h2 class="text-3xl font-semibold mb-6">📬 Contact</h2>
+    <p class="text-neutral-400">If you have any questions or suggestions, please reach out to us:</p>
+    <ul class="mt-4 space-y-2">
       <li>Publisher Name: <strong>Protocol Simulation</strong> on Google Play</li>
     </ul>
   </section>
 
-  <footer>
+  <!-- Footer -->
+  <footer class="text-center text-neutral-500 mt-20 py-6 border-t border-neutral-800 text-sm">
     &copy; 2025 Protocol Simulation. All rights reserved.
   </footer>
 
