@@ -1,36 +1,142 @@
-# Protocol Simulation — official website
+# Protocol Simulation
 
-A complete, dependency-free static website. No React/Vite compilation, npm installation, server, database or paid hosting is required. HTML files are directly editable. The shared styling and functionality live in `assets/site.css` and `assets/site.js`.
+[![Official Website](https://img.shields.io/badge/Website-Protocol%20Simulation-84cc16)](https://protocolsimulation.github.io/)
+[![Google Play](https://img.shields.io/badge/Google%20Play-Available-34A853?logo=googleplay&logoColor=white)](https://play.google.com/store/apps/dev?id=6892059516122641709)
+![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?logo=android&logoColor=white)
+![Hosting](https://img.shields.io/badge/Hosting-GitHub%20Pages-222222?logo=github)
 
-## Deploy on GitHub Pages
+Official website repository of **Protocol Simulation**, an independent mobile game development studio specializing in automotive simulation and driving games for Android.
 
-1. Back up or commit your old project. Keep the existing `.git` directory if using Git locally. Remove obsolete website files (old `src/`, `node_modules/`, `public/`, Vite configuration, package manifests, etc.) only after backup. Do not remove your `.git` or a needed `CNAME`.
-2. Extract the contents of this archive into the actual GitHub Pages publishing folder, with `index.html` directly in that folder. Do not nest the extracted site inside another folder.
-3. In the correct GitHub repository, check Settings > Pages > Build and deployment. Choose **Deploy from a branch**, then `main` and `/(root)` (or the folder you actually publish from). Commit/push.
-4. The uploaded ZIP's Git remote pointed at `MasoodSaamer/Website_for_GameApps`, whereas the public Google Play developer page points at `protocolsimulation.github.io` and app privacy links point at `protocolsimulation.github.io/ProtocolGamesWebsite/privacy-policy.html`. Verify which repository you are updating. Deploying the ZIP to the older remote alone may not change the public Google Play-linked website.
-5. To preserve the domain-wide advertising authorization, ensure `https://protocolsimulation.github.io/app-ads.txt` is accessible at the domain root. The file is copied byte-for-byte from the supplied project. Confirm its seller IDs against your ad network dashboards. Keep the published privacy URL accessible; the ZIP includes both `privacy-policy.html` and `ProtocolGamesWebsite/privacy-policy.html` for root-site compatibility.
+## About Protocol Simulation
 
-Preview locally: open `index.html`, or run `python -m http.server 8000` from the extracted folder and open `http://localhost:8000/`.
+Protocol Simulation develops mobile driving experiences focused on vehicle simulation, open-world exploration, vehicle customization and accessible gameplay.
 
-## Content and images
+The studio's portfolio includes city driving, off-road adventures, electric vehicle simulation and regionally inspired automotive experiences, with millions of downloads across its published titles on Google Play.
 
-- Nine featured games with Google Play links, including current title spellings, official screenshot URLs, and public download thresholds checked 2026-11-25. The combined thresholds total 6.25 million, displayed conservatively as 6M+. They are not unique players or private analytics.
-- `assets/catalogue.json` is the editorial reference for titles, descriptions, screenshots and dates. To edit the displayed site, edit the corresponding HTML pages; the JSON is a reference, not a runtime dependency.
-- Official screenshots are embedded from Google Play's `play-lh.googleusercontent.com` CDN (two per featured game). The supplied old `src` images/videos are not used. The CDN was accessible to web research, but binary image downloads were blocked in the build environment. The site falls back to a new local vector graphic if a screenshot cannot load. For fully self-hosted artwork, run `python tools/localize_images.py` from your computer with internet access. The optional script downloads official images and rewrites the corresponding HTML and JSON paths automatically. Failed downloads keep their original remote links. This is not required to deploy the site. No third-party stock art or fabricated gameplay screenshots are used.
-- The public publisher profile lists eight visible titles, with Corolla also confirmed through its direct current store page. The old project has other titles; Revo Hilux and German Car Simulator returned older cached listings but were not in the current profile; Honda Civic, Sports India and Japan listings could not be currently confirmed. They are excluded from the featured catalogue until availability is verified. This is not a claim that they have been permanently removed.
-- News uses public listing update dates rather than fictional announcements. Blog entries are new general player guides.
-- The original project used EmailJS. This version intentionally opens a prefilled email draft instead, using the public support address. It does not falsely report an email as sent. No EmailJS secrets or identifiers are carried into the package.
-- The newer, live September 20, 2025 app privacy policy is retained rather than the older August 19, 2024 React copy. A separate website disclosure and a data request contact page were added. Review the actual app SDKs, data safety declarations, account deletion mechanisms, retention practices and applicable legal requirements before publishing; this is not a legal compliance audit.
-- Existing YouTube and Instagram URLs are carried from your source, not independently authenticated. New brand mark and fallback are simple original vector artwork, not official store icons.
+## Official Website
 
-## Structure
+**[protocolsimulation.github.io](https://protocolsimulation.github.io/)**
 
-- `index.html` — homepage
-- `games/index.html` — searchable/filterable/sortable game catalogue
-- `games/<slug>/index.html` — individual game pages and image gallery
-- `news/`, `blog/`, `about/`, `support/` — content pages
-- `privacy-policy.html`, `privacy-policy/`, `data-deletion.html` — legal/support routes
-- `published-games/`, `contact-us/`, `ProtocolGamesWebsite/` — compatibility URLs
-- `404.html`, `.nojekyll`, `app-ads.txt`, `googled01904a46673d979.html`
+The website serves as the central platform for discovering published games, accessing game information, following development updates and obtaining player support.
 
-No old source images, Git history or node_modules are included. Never overwrite your `.git` folder.
+### Website Features
+
+- Interactive game catalogue with search, filtering and sorting
+- Dedicated information pages for individual games
+- Official game screenshots and Google Play download links
+- Game news and update announcements
+- Gameplay articles and player guides
+- Studio information
+- Player support and frequently asked questions
+- Privacy policy and personal data requests
+- Responsive desktop and mobile layouts
+
+## Game Portfolio
+
+| Game | Category |
+| --- | --- |
+| Saudi Car Simulator Game | Driving Simulation |
+| Indian Car Simulator Game | Driving Simulation |
+| Pakistan Car Simulator Game | Driving Simulation |
+| Cruiser 4x4 Land Car Game | Off-Road Simulation |
+| Dubai Van Car Game | Vehicle Simulation |
+| Corolla Car Game Simulator | Driving Simulation |
+| Arab Car Game Simulation | Driving Simulation |
+| Electric Vehicle EV Car Game | Electric Vehicle Simulation |
+| Indonesia Car Game | Driving Simulation |
+
+The complete game portfolio is available on the official [Protocol Simulation Google Play developer page](https://play.google.com/store/apps/dev?id=6892059516122641709).
+
+## Technology Stack
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)
+![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?logo=github&logoColor=white)
+
+| Technology | Purpose |
+| --- | --- |
+| HTML5 | Website structure and semantic content |
+| CSS3 | Visual design, responsive layouts and animations |
+| JavaScript | Interactive components and catalogue functionality |
+| SVG | Scalable vector graphics |
+| Git | Version control |
+| GitHub Pages | Static website hosting and deployment |
+
+## Architecture
+
+The website follows a lightweight, dependency-free static web architecture.
+
+Its design emphasizes:
+
+- Performance and accessibility
+- Responsive user interfaces
+- Cross-device compatibility
+- Search engine discoverability
+- Modular page organization
+- Maintainability
+- Direct integration with official Google Play listings
+
+The website does not require a server-side application, database, external frontend framework or build process.
+
+## Repository Structure
+
+```text
+protocolsimulation.github.io/
+├── about/                    # Studio information
+├── assets/                   # Stylesheets, scripts and visual assets
+├── blog/                     # Articles and player guides
+├── contact-us/               # Contact page compatibility
+├── games/                    # Game catalogue and individual game pages
+├── news/                     # Game news and announcements
+├── privacy-policy/           # Privacy policy compatibility
+├── ProtocolGamesWebsite/     # Legacy URL compatibility
+├── published-games/          # Game catalogue compatibility
+├── support/                  # Player support and FAQs
+├── tools/                    # Website maintenance utilities
+├── index.html                # Homepage
+├── privacy-policy.html       # Privacy policy
+├── data-deletion.html        # Personal data requests
+├── contact-us.html           # Contact page
+├── published-games.html      # Published games entry point
+├── app-ads.txt               # Authorized advertising sellers
+├── 404.html                  # Custom error page
+├── .nojekyll                 # Static hosting configuration
+└── README.md                 # Repository documentation
+```
+
+## Deployment
+
+The website is hosted using GitHub Pages and deployed from the `main` branch of this repository.
+
+The static architecture enables deployment without external build dependencies or server-side infrastructure.
+
+## Privacy and Advertising
+
+Protocol Simulation provides publicly accessible privacy information and support resources for its mobile applications.
+
+- [Privacy Policy](https://protocolsimulation.github.io/privacy-policy.html)
+- [Data and Privacy Requests](https://protocolsimulation.github.io/data-deletion.html)
+- [Authorized Advertising Sellers](https://protocolsimulation.github.io/app-ads.txt)
+
+## Official Links
+
+| Resource | Link |
+| --- | --- |
+| Official Website | [protocolsimulation.github.io](https://protocolsimulation.github.io/) |
+| Google Play | [Protocol Simulation](https://play.google.com/store/apps/dev?id=6892059516122641709) |
+| Game Catalogue | [Published Games](https://protocolsimulation.github.io/games/) |
+| News | [News and Updates](https://protocolsimulation.github.io/news/) |
+| Blog | [Articles and Guides](https://protocolsimulation.github.io/blog/) |
+| Player Support | [Support Centre](https://protocolsimulation.github.io/support/) |
+
+## Contact
+
+For gameplay-related inquiries, technical support, business inquiries or privacy-related requests, please visit the official website's support section.
+
+**Email:** policepatrol.666@gmail.com
+
+---
+
+**Protocol Simulation** — Independent Mobile Game Development Studio.
