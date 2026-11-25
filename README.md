@@ -9,97 +9,73 @@ Official website repository of **Protocol Simulation**, an independent mobile ga
 
 ## About Protocol Simulation
 
-Protocol Simulation develops mobile driving experiences focused on vehicle simulation, open-world exploration, vehicle customization and accessible gameplay.
-
-The studio's portfolio includes city driving, off-road adventures, electric vehicle simulation and regionally inspired automotive experiences, with millions of downloads across its published titles on Google Play.
+Protocol Simulation develops mobile driving experiences focused on vehicle simulation, open-world exploration, vehicle customization and accessible gameplay. The portfolio includes city driving, off-road adventures, electric vehicle simulation and regionally inspired automotive experiences.
 
 ## Official Website
 
 **[protocolsimulation.github.io](https://protocolsimulation.github.io/)**
 
-The website serves as the central platform for discovering published games, accessing game information, following development updates and obtaining player support.
-
-### Website Features
-
-- Interactive game catalogue with search, filtering and sorting
-- Dedicated information pages for individual games
-- Official game screenshots and Google Play download links
-- Game news and update announcements
-- Gameplay articles and player guides
-- Studio information
-- Player support and frequently asked questions
-- Privacy policy and personal data requests
-- Responsive desktop and mobile layouts
+The website provides a searchable game catalogue, individual game pages, official promotional screenshots, game updates, player guides, studio information, technology stack, support resources and privacy information. The interface adapts to desktop and mobile devices.
 
 ## Game Portfolio
 
-| Game | Category |
+| Game | Google Play |
 | --- | --- |
-| Saudi Car Simulator Game | Driving Simulation |
-| Indian Car Simulator Game | Driving Simulation |
-| Pakistan Car Simulator Game | Driving Simulation |
-| Cruiser 4x4 Land Car Game | Off-Road Simulation |
-| Dubai Van Car Game | Vehicle Simulation |
-| Corolla Car Game Simulator | Driving Simulation |
-| Arab Car Game Simulation | Driving Simulation |
-| Electric Vehicle EV Car Game | Electric Vehicle Simulation |
-| Indonesia Car Game | Driving Simulation |
-
-The complete game portfolio is available on the official [Protocol Simulation Google Play developer page](https://play.google.com/store/apps/dev?id=6892059516122641709).
+| Saudi Car Simulator Game | [View game](https://play.google.com/store/apps/details?id=com.PoliceProtocol.SaudiCarSimulator) |
+| Indian Car Simulator Game | [View game](https://play.google.com/store/apps/details?id=com.PoliceProtocol.IndianCarSimulatorGame) |
+| Pakistan Car Simulator Game | [View game](https://play.google.com/store/apps/details?id=com.PoliceProtocol.PakistaniCarSimGame2022) |
+| Cruiser 4x4 Land Car Game | [View game](https://play.google.com/store/apps/details?id=com.PoliceProtocol.ToyotaCarSimulator2021) |
+| Dubai Van Car Game | [View game](https://play.google.com/store/apps/details?id=com.PoliceProtocol.SuzukiCarSimulatorGame) |
+| Arab Car Game Simulation | [View game](https://play.google.com/store/apps/details?id=com.PoliceProtocol.FortunerCarGameProtocolSimulation) |
+| Electric Vehicle EV Car Game | [View game](https://play.google.com/store/apps/details?id=com.PoliceProtocol.TeslaCityDriveGameProtocolSimulation) |
+| Indonesia Car Game | [View game](https://play.google.com/store/apps/details?id=com.PoliceProtocol.EuroCarSimulator2021) |
 
 ## Technology Stack
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
-![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)
-![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?logo=github&logoColor=white)
-
-| Technology | Purpose |
+| Engineering area | Technologies |
 | --- | --- |
-| HTML5 | Website structure and semantic content |
-| CSS3 | Visual design, responsive layouts and animations |
-| JavaScript | Interactive components and catalogue functionality |
-| SVG | Scalable vector graphics |
-| Git | Version control |
-| GitHub Pages | Static website hosting and deployment |
+| Game engine | Unity |
+| Gameplay programming | C# |
+| Vehicle simulation | Realistic Car Controller V3 (RCC V3), with in-house modifications |
+| Rendering | Universal Render Pipeline (URP), Built-in Render Pipeline in selected games |
+| 3D assets | Blender, Unity Asset Store |
+| Multiplayer networking | Photon Cloud |
+| Leaderboards | Unity Gaming Services — Leaderboards |
+| Target platform | Android |
+| Distribution | Google Play |
+| Ad mediation | Unity LevelPlay (ironSource) |
+| Advertising networks | Google AdMob, Meta Audience Network, Unity Ads |
+| Analytics | Google Play Console, Unity Analytics, Unity LevelPlay |
+| Performance profiling | Unity Profiler |
+| Website | HTML5, CSS3, JavaScript |
+| Hosting and version control | GitHub Pages, Git |
 
-## Architecture
+Technology usage varies across titles. Additional details are available on the [About page](https://protocolsimulation.github.io/about/).
 
-The website follows a lightweight, dependency-free static web architecture.
+## Website Architecture
 
-Its design emphasizes:
-
-- Performance and accessibility
-- Responsive user interfaces
-- Cross-device compatibility
-- Search engine discoverability
-- Modular page organization
-- Maintainability
-- Direct integration with official Google Play listings
-
-The website does not require a server-side application, database, external frontend framework or build process.
+The website uses a lightweight, dependency-free static architecture with shared CSS and JavaScript. It supports responsive layouts, catalogue search and filtering, screenshot galleries and player support without a server-side application or database. Official game screenshots are sourced from Google Play.
 
 ## Repository Structure
 
 ```text
 protocolsimulation.github.io/
-├── about/                    # Studio information
-├── assets/                   # Stylesheets, scripts and visual assets
-├── blog/                     # Articles and player guides
-├── contact-us/               # Contact page compatibility
-├── games/                    # Game catalogue and individual game pages
-├── news/                     # Game news and announcements
-├── privacy-policy/           # Privacy policy compatibility
+├── about/                    # Studio and technology stack
+├── assets/                   # Shared styling, scripts and visual assets
+├── blog/                     # Player guides
+├── contact-us/               # Contact route compatibility
+├── games/                    # Catalogue and individual game pages
+├── news/                     # Game updates
+├── privacy-policy/           # Privacy route compatibility
 ├── ProtocolGamesWebsite/     # Legacy URL compatibility
-├── published-games/          # Game catalogue compatibility
-├── support/                  # Player support and FAQs
+├── published-games/          # Catalogue route compatibility
+├── support/                  # Player support
 ├── tools/                    # Website maintenance utilities
 ├── index.html                # Homepage
 ├── privacy-policy.html       # Privacy policy
-├── data-deletion.html        # Personal data requests
-├── contact-us.html           # Contact page
-├── published-games.html      # Published games entry point
+├── data-deletion.html        # Data and privacy requests
+├── favicon.png               # Browser icon
+├── favicon.ico               # Browser icon fallback
 ├── app-ads.txt               # Authorized advertising sellers
 ├── 404.html                  # Custom error page
 ├── .nojekyll                 # Static hosting configuration
@@ -108,34 +84,25 @@ protocolsimulation.github.io/
 
 ## Deployment
 
-The website is hosted using GitHub Pages and deployed from the `main` branch of this repository.
-
-The static architecture enables deployment without external build dependencies or server-side infrastructure.
-
-## Privacy and Advertising
-
-Protocol Simulation provides publicly accessible privacy information and support resources for its mobile applications.
-
-- [Privacy Policy](https://protocolsimulation.github.io/privacy-policy.html)
-- [Data and Privacy Requests](https://protocolsimulation.github.io/data-deletion.html)
-- [Authorized Advertising Sellers](https://protocolsimulation.github.io/app-ads.txt)
+The static website is hosted using GitHub Pages and deployed from the `main` branch. No build pipeline or external server infrastructure is required. The domain-root `app-ads.txt` contains the authorized advertising seller declarations.
 
 ## Official Links
 
 | Resource | Link |
 | --- | --- |
-| Official Website | [protocolsimulation.github.io](https://protocolsimulation.github.io/) |
+| Official website | [protocolsimulation.github.io](https://protocolsimulation.github.io/) |
 | Google Play | [Protocol Simulation](https://play.google.com/store/apps/dev?id=6892059516122641709) |
-| Game Catalogue | [Published Games](https://protocolsimulation.github.io/games/) |
+| Game catalogue | [Games](https://protocolsimulation.github.io/games/) |
+| Studio and technology | [About](https://protocolsimulation.github.io/about/) |
 | News | [News and Updates](https://protocolsimulation.github.io/news/) |
 | Blog | [Articles and Guides](https://protocolsimulation.github.io/blog/) |
-| Player Support | [Support Centre](https://protocolsimulation.github.io/support/) |
+| Player support | [Support Centre](https://protocolsimulation.github.io/support/) |
+| Privacy policy | [Privacy Policy](https://protocolsimulation.github.io/privacy-policy.html) |
+| Data requests | [Data and Privacy Requests](https://protocolsimulation.github.io/data-deletion.html) |
 
 ## Contact
 
-For gameplay-related inquiries, technical support, business inquiries or privacy-related requests, please visit the official website's support section.
-
-**Email:** policepatrol.666@gmail.com
+For gameplay inquiries, technical support, business inquiries or privacy-related requests, visit the official support section or contact **policepatrol.666@gmail.com**.
 
 ---
 

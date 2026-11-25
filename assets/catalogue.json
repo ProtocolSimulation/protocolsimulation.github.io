@@ -115,29 +115,6 @@
     "category": "Middle East"
   },
   {
-    "slug": "corolla-car-simulator",
-    "title": "Corolla Car Game Simulator",
-    "tag": "Sedan · Driving & drift",
-    "downloads": "1M+",
-    "count": 1000000,
-    "lead": "Explore generations of sedans and make each car your own.",
-    "description": "Drive or drift through city and highway maps in a selection of sedans spanning model years 2000–2025. Customize the exterior and enjoy the drive.",
-    "features": [
-      "Multiple sedan generations",
-      "Drift & normal driving",
-      "Exterior customization",
-      "Exit and enter vehicles"
-    ],
-    "date": "2026-02-08",
-    "package": "com.PoliceProtocol.ToyotaCorollaCarGameProtocolSimulation",
-    "store": "https://play.google.com/store/apps/details?id=com.PoliceProtocol.ToyotaCorollaCarGameProtocolSimulation",
-    "images": [
-      "https://play-lh.googleusercontent.com/P8y3g3eTFCrQLo-LiW7Peo5x6879AZN6LmEGWQsume240EYy8sagqp8HeWciO_KGPWtUu1bIdr0XH3L5QrJAGw=w526-h296",
-      "https://play-lh.googleusercontent.com/ynsuLhoSWQ6kyHNiiCUMuMaWnlKhRk-ibYwEJ4Ty6603YqoDgOW2vhiuihoFNxQMnznX2g6WtHFN8hHgvjJy=w526-h296"
-    ],
-    "category": "Driving"
-  },
-  {
     "slug": "arab-car-simulation",
     "title": "Arab Car Game Simulation",
     "tag": "Middle East · Open world",
