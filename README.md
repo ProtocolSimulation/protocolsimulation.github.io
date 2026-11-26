@@ -1,6 +1,6 @@
 # Protocol Simulation
 
-[![Official Website](https://img.shields.io/badge/Website-Protocol%20Simulation-84cc16)](https://protocolsimulation.github.io/)
+[![Official Website](https://img.shields.io/badge/Website-Protocol%20Simulation-ffcc00)](https://protocolsimulation.github.io/)
 [![Google Play](https://img.shields.io/badge/Google%20Play-Available-34A853?logo=googleplay&logoColor=white)](https://play.google.com/store/apps/dev?id=6892059516122641709)
 ![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?logo=android&logoColor=white)
 ![Hosting](https://img.shields.io/badge/Hosting-GitHub%20Pages-222222?logo=github)
@@ -73,7 +73,6 @@ protocolsimulation.github.io/
 ├── tools/                    # Website maintenance utilities
 ├── index.html                # Homepage
 ├── privacy-policy.html       # Privacy policy
-├── data-deletion.html        # Data and privacy requests
 ├── favicon.png               # Browser icon
 ├── favicon.ico               # Browser icon fallback
 ├── app-ads.txt               # Authorized advertising sellers
@@ -98,7 +97,6 @@ The static website is hosted using GitHub Pages and deployed from the `main` bra
 | Blog | [Articles and Guides](https://protocolsimulation.github.io/blog/) |
 | Player support | [Support Centre](https://protocolsimulation.github.io/support/) |
 | Privacy policy | [Privacy Policy](https://protocolsimulation.github.io/privacy-policy.html) |
-| Data requests | [Data and Privacy Requests](https://protocolsimulation.github.io/data-deletion.html) |
 
 ## Contact
 

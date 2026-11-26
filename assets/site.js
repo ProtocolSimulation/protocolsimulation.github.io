@@ -44,7 +44,7 @@ if (form) {
     const message = `Game: ${data.get('game')}\nTopic: ${data.get('topic')}\nDevice/app version: ${data.get('device') || 'Not provided'}\n\n${data.get('message')}`;
     const uri = `mailto:policepatrol.666@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
     // Keep the full report available even if the OS has no configured mail application.
-    $('#support-status').textContent = 'Your email app should open. If it does not, copy your message and email policepatrol.666@gmail.com directly. Nothing has been sent automatically.';
+    $('#support-status').textContent = 'Your email app should open. If it does not, copy your message and email policepatrol.666@gmail.com directly.';
     location.href = uri;
   });
 }
